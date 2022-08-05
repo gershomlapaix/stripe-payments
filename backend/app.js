@@ -13,4 +13,6 @@ app.use(
 );
 app.use(express.json());
 
+app.use("/api/v1/payments/user", require('./routes/auth'));
+
 module.exports = app;
